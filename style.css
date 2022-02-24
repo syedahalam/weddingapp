@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fira+Sans:wght@400;700&family=Inter:wght@400;500;700&family=Lato:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@300;400;700&family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fira+Sans:wght@400;700&family=Inter:wght@400;500;700&family=Lato:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@300;400;700&family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* background-color: rgba(169, 101, 114, 0.845); */
+	background-color: maroon;
+
+	/* coz we wanted to make it sticky thats why height is given */
+	height: 5rem;
+	width: 100%;
+	padding: 0 48px;
+	/* position: relative; */
+	position: fixed;
+	color: white;
+	font-family: 'Dancing Script', sans-serif;
+	z-index: 10;
+}
+.header-background {
+	background-image: url(images/propose1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	/* background-attachment: fixed; */
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+}
+.bng {
+	font-size: 3rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	font-family: 'Dancing Script', sans-serif;
+}
+.description {
+	text-align: right;
+	/* font-size: 1rem; */
+}
+
+.faysal {
+	text-align: left;
+}
+.fontasm {
+	height: 2rem;
+	width: 2rem;
+}
+.header .logo {
+	padding-top: 1rem;
+	height: 5rem;
+	font-size: 3rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: white;
+}
+.main-nav ul li {
+	color: #fff !important;
+}
+.main-nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 4.2rem;
+	color: #fff;
+}
+.main-nav-link.bandg {
+	color: #fff;
+}
+
+.main-nav-link:link,
+.main.nav-link:visited {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 2rem;
+	/* transition: all 0.3s;
+	display: inline-block; */
+}
+.main-nav-link:hover,
+.main.nav-link:active {
+	color: #fff;
+	/* background-color: rgba(244, 206, 214, 0.606); */
+	/* padding: 1rem; */
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+	padding: 1.2rem 2.44rem;
+	border-radius: 9px;
+	color: #fff;
+	/* background-color: rgb(169, 101, 113); */
+	background-color: maroon;
+	transition: all 0.3s;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+	background-color: #fae5d3;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+}
+
+/* MOBILE */
+
+/* *************************************/
+/* General components */
+.btn-mobile-nav {
+	border: none;
+	background: rgba(255, 255, 255, 0.469);
+	cursor: pointer;
+	/* by default display non until reach to particular rems*/
+	display: none;
+}
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+}
+.icon-mobile-nav[name='close-outline'] {
+	display: none;
+}
+
+/* /////////// nav ends here///////// */
+/* ///////////////////headings */
+.headings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	z-index: 99;
+}
+.main-heading {
+	text-align: center;
+	font-size: 12rem;
+	font-weight: bold;
+	padding: 5rem 5rem 1rem 5rem;
+	margin-top: 3rem;
+	color: #fff;
+	/* color: rgba(169, 101, 114); */
+	color: maroon;
+	font-family: 'Dancing Script', sans-serif;
+}
+.heading-two {
+	font-size: 3rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	background-color: rgba(255, 255, 255, 0.544);
+	margin-top: 12rem;
+	text-align: center;
+	border-radius: 1rem;
+	padding: 1rem;
+	font-family: 'Dancing Script', sans-serif;
+}
+.head2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+	/* margin-top: 40rem; */
+}
+
+/* ///////////////////////// */
+
+/* TIMER */
+/* .coming-soon {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+} */
+.countdown {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 1rem;
+	color: white !important;
+	/* background-color: rgba(169, 101, 114, 0.64); */
+	background-color: rgba(128, 0, 0, 0.654);
+	border-radius: 1rem;
+}
+/* .coundown-counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+} */
+.countdown-text {
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: 'Lato', sans-serif;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+	font-size: 3rem;
+	padding: 0 3rem 2rem 3rem;
+	color: #fff !important;
+}
+
+.two {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.img {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+#strong {
+	font-style: italic;
+	font-size: 3rem;
+	font-weight: bold;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	font-family: 'Dancing Script', sans-serif;
+}
+
+/* ///////////TIMER ENDS */
+
+/* .///////////////SECTIONS ///////////*/
+.bride-groom {
+	padding: 5rem;
+	/* height: 100vh; */
+	margin-bottom: 5rem;
+}
+.bg-two {
+	font-size: 4rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	background-color: white;
+	text-align: center;
+	border-radius: 1rem;
+	font-family: 'Dancing Script', sans-serif;
+	padding: 3rem;
+}
+.bride-and-groom-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 5.3rem;
+	margin-top: 7rem;
+}
+.step-img-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+	content: '';
+	display: block;
+	/* height: 60; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.step-img-box::before {
+	/* background-color: rgba(179, 90, 106, 0.612); */
+	background-color: maroon;
+	padding-bottom: 60%;
+	width: 50%;
+	z-index: -1;
+}
+.step-img-box::after {
+	width: 40%;
+	padding-bottom: 50%;
+	background-color: rgb(169, 101, 113);
+	z-index: -1;
+}
+.step-img {
+	width: 30%;
+	border-radius: 2rem;
+}
+.step-description {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+.girl {
+	height: 20rem;
+}
+.boy {
+	height: 20rem;
+}
+.container {
+	max-width: 150rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	border-radius: 5px;
+}
+.grid {
+	display: grid;
+	row-gap: 7.6rem;
+	column-gap: 6.4rem;
+}
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+/* parallax 2 */
+.parallax2 {
+	background: url(./images/engagement.jpg);
+	/* min-height: 40%; */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80% 30%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+}
+/* rotating */
+.rotate {
+	margin-top: 4rem;
+}
+.container-rotating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	height: 80vh;
+}
+.rotate-head {
+	padding-top: 18rem;
+	padding-bottom: 10rem;
+	text-align: center;
+	font-size: 6rem;
+	font-weight: bold;
+	color: maroon;
+	font-family: 'Dancing Script', sans-serif;
+}
+
+.slider {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+	0% {
+		transform: perspective(1000px) rotateY(0deg);
+	}
+	100% {
+		transform: perspective(1000px) rotateY(360deg);
+	}
+}
+.slider span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
+}
+.slider span img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+	transition: 2s;
+}
+.slider span:hover img {
+	transform: translateY(-50px) scale(1.2);
+}
+
+/*  */
+.parallaxdiay {
+	background: url(./images/di.jpg);
+	/* min-height: 40%; */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80% 30%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+}
+.parallax3 {
+	background: url(./images/fam.jpg);
+	min-height: 40%;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 65% 35%;
+
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+}
+/* ///////////////events section ////////// */
+.events {
+	/* height: 120vh; */
+	/* margin-bottom: 10rem; */
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+
+	background-image: url(./images/e.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container-events {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* grid-template-rows: 1fr; */
+	/* row-gap: 4rem; */
+	column-gap: 1rem;
+	justify-content: center;
+
+	/* max-width: 240rem; */
+	/* margin: 0 auto; */
+	padding: 4rem 10rem 4rem 10rem;
+
+	/* border-radius: 5px; */
+}
+.card {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 2rem;
+
+	width: 25rem;
+	height: 45rem;
+
+	box-shadow: 0 2.4rem 4.8rem 4.8rem rgba(0, 0, 0, 0.075);
+	/* border: 1px solid rgb(169, 101, 113); */
+	border: 1px solid maroon;
+	border-radius: 1rem;
+	transition: all 0.4s;
+	overflow: hidden;
+}
+.card:hover {
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.06);
+	transform: translateY(-1.2rem);
+}
+.event-name {
+	font-size: 2.4rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	text-align: center;
+	font-weight: 600;
+	padding-top: 1rem;
+}
+.event-date {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+.event-time {
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+iframe {
+	width: 100%;
+	height: 30%;
+}
+address {
+	font-size: 1rem;
+	padding-bottom: 1rem;
+}
+.seperate {
+	/* height: 35%; */
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.haldi {
+	background-color: yellow;
+	width: 100%;
+	padding: 3rem;
+	/* padding-top: 4rem; */
+	text-align: center;
+}
+.mehndi {
+	background-color: rgb(62, 73, 4);
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.wedding {
+	background-color: rgba(176, 11, 11, 0.852);
+	width: 100%;
+	padding: 2.5rem;
+	text-align: center;
+}
+.reception {
+	background-color: rgb(205, 225, 233);
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.card-img {
+	margin-top: -25px;
+	width: 100%;
+	height: 40%;
+}
+.tel {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.events-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.heading-events {
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 6rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+}
+.planning-heading {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	color: rgb(101, 85, 89);
+	/* border: 1px dotted rgb(169, 101, 113); */
+	border: 1px dotted maroon;
+	width: 15rem;
+	text-align: center;
+	padding: 0.5rem;
+	margin: 2rem;
+}
+.dis {
+	padding: 0 3.2rem;
+}
+
+/* ////////////// Gallery Section */
+#slider {
+	height: 400px;
+	/* border: 1px solid #000; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container-gallery {
+	width: 1600px;
+	margin: auto;
+}
+h2,
+h3 {
+	text-align: center;
+	color: maroon;
+}
+.heading-gallery {
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 6rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	margin-top: 6rem;
+}
+.slide-img {
+	width: 80%;
+	height: 200px;
+	border-radius: 5px;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.slide-img:hover {
+	box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.5) inset;
+}
+.slide-img h2 {
+	opacity: 0;
+	transform: scale(0);
+	transition: 0.8s;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.slide-img:hover h2 {
+	opacity: 1;
+	transform: scale(1);
+}
+.subcontainer {
+	align-items: center;
+}
+.img-bhai {
+	background-image: url(./images/dad1.jpg);
+	background-position: 75% 25%;
+}
+.img-zakia {
+	background-image: url(./images/mom1.jpg);
+	background-position: 70% 30%;
+}
+.img-sheema {
+	background-image: url(./images/sis.jpg);
+	background-position: 75% 35%;
+}
+.img-fahad {
+	background-image: url(./images/bro.jpg);
+	background-position: 85% 15%;
+}
+.img-bhaig {
+	background-image: url(./images/dad2.jpg);
+	background-position: 85% 15%;
+}
+.img-bhaabi {
+	background-image: url(./images/mom2.jpg);
+	background-position: 65% 35%;
+}
+@media (max-width: 1600px) {
+	.container-gallery {
+		width: 100%;
+	}
+}
+/* RSVP section///////////////////////// */
+.rsvp {
+	overflow: hidden;
+}
+.container-rsvp {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.bg {
+	background-image: url(./images/form.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 70% 30%;
+
+	/* height: 100vh; */
+}
+.rsvp-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* commented justify-content so that heading will be on top not in the mid of the page */
+	justify-content: center;
+	gap: 4rem;
+	padding: 2rem;
+	font-size: 1.5rem;
+
+	background-color: rgba(247, 250, 225, 0.619);
+}
+.head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.heading-rsvp {
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 6rem;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	margin-bottom: -1rem;
+}
+.rsvp--planning-heading {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	color: maroon;
+	/* border: 1px dotted rgb(169, 101, 113); */
+	border: 1px dotted maroon;
+	width: 15rem;
+	text-align: center;
+	padding: 0.5rem;
+	margin-top: 4rem;
+}
+.form-control {
+	font-family: 'Muli', sans-serif;
+}
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	padding: 1rem;
+	/* background-color: rgb(169, 101, 113); */
+	background-color: maroon;
+	padding: 2rem;
+	font-family: 'Muli', sans-serif;
+	font-size: 2rem;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+.btn:focus {
+	outline: 0;
+}
+/* form making button a little less in size when clicked */
+.btn:active {
+	transform: scale(0.98);
+}
+.form-control {
+	position: relative;
+	margin: 10px 0 40px;
+	width: 300px;
+}
+.form-control input {
+	background-color: transparent;
+	/* for zero outline border */
+	border: 0;
+	/* for white line */
+	border-bottom: 2px #fff solid;
+	display: block;
+	/* width all the way across */
+	width: 100%;
+	padding: 15px 0;
+	font-size: 18px;
+	/* input color-white */
+	color: rgba(101, 85, 89);
+	border-bottom-color: rgba(101, 85, 89);
+}
+/* to get rid of the border whn typing in the input */
+.form-control input:focus,
+.form-control input:valid {
+	outline: 0;
+	/* change border-bottom to light blue when clicked */
+	border-bottom-color: rgba(101, 85, 89);
+}
+.form-control label {
+	position: absolute;
+	/* for labels to be on top of line of input */
+	top: 15px;
+	left: 0;
+}
+.form-control label span {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	/* for cool bounce effect when clicked on label to type */
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+	color: rgba(101, 85, 89);
+	/* to move a little bit up when clicked to type */
+	transform: translateY(-30px);
+	background-color: rgba(247, 250, 225, 0.619);
+}
+
+input[type='number'] {
+	padding: 0.5rem;
+	background-color: rgba(247, 250, 225, 0.619);
+	/* border: rgb(111, 59, 69); */
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	border-bottom: 2px solid rgba(101, 85, 89);
+
+	width: auto;
+	display: inline-block;
+	height: auto;
+}
+.label {
+	font-size: 18px;
+}
+textarea {
+	background-color: rgba(247, 250, 225, 0.619);
+	outline: none;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid rgba(101, 85, 89);
+	font-family: 'Muli', sans-serif;
+	font-size: 18px;
+	margin-bottom: 2rem;
+}
+/* //////// events section ends here */
+
+.parallax4 {
+	background: url(./images/hope.jpg);
+	/* min-height: 40%; */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: 80% 30%; */
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	background-position: 60% 40%;
+	position: relative;
+}
+.parallax-gallery {
+	background: url(./images/rsvp.jpg);
+	/* min-height: 40%; */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25% 75%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+}
+.parallax-heading {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	color: #fff;
+	font-size: 350%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 0 0 10px #000;
+}
+/*  */
+@media (max-width: 25rem) {
+	.heading-two {
+		font-size: 2rem;
+	}
+	.coming-soon {
+		width: auto;
+	}
+}
+.link:link,
+.link:visited {
+	display: inline-block;
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	transition: all 3sec;
+}
+.link:hover,
+.link:active {
+	/* color: rgb(169, 101, 113); */
+	color: maroon;
+	/* 1px solid transparent wont jump it 
+	/* border-bottom: 1px solid transparent; */
+}
+
+/* Footer */
+.container-footer {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+.footer {
+	padding: 3rem 0;
+	border-top: 1px solid #eee;
+}
+.grid {
+	display: grid;
+	row-gap: 9.6rem;
+	column-gap: 6.4rem;
+}
+.grid-footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-links {
+	list-style: none;
+	display: flex;
+	gap: 2.4rem;
+	flex-direction: column;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+}
+.social-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+}
+.copyright {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+	/* margin-top: auto; */
+	padding-top: 6rem;
+	text-align: center;
+}
+.footer-heading {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+}
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	font-size: 1.6rem;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+	transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+}
+.address {
+	margin-bottom: 2.4rem;
+	/* color: rgb(163, 75, 89); */
+	color: maroon;
+}
+
+.footer-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+.contacts {
+	font-style: normal;
+	font-size: 1.6rem;
+	line-height: 1.6;
+}
+/* /////////// Footer ends//////////////// */

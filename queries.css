@@ -1,0 +1,783 @@
+/* 1344 px and less */
+@media (max-width: 84em) {
+	.header-background {
+		/* min-height: 100%;
+		min-width: 84rem; */
+		background-position: 50% 50%;
+	}
+	.headings {
+		max-width: 120rem;
+	}
+	.main-heading {
+		font-size: 6.4rem;
+		padding-top: 2rem;
+	}
+	.heading-two {
+		margin-top: -1.5rem;
+	}
+
+	.main-nav-link:link,
+	.main-nav-link:visited {
+		font-size: 2rem;
+	}
+	.logo {
+		font-size: 2.5rem;
+	}
+
+	.bg-two {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+	.slide-img {
+		margin: 0 auto;
+	}
+}
+
+/* Below 1200 px (landscape tablets) */
+@media (max-width: 75em) {
+	html {
+		font-size: 70%;
+	}
+	.grid {
+		column-gap: 4.8rem;
+		row-gap: 6.4rem;
+	}
+	.header {
+		padding: 0 3.2rem;
+	}
+	.headings {
+		gap: 3.2rem;
+	}
+	.main-nav-list {
+		gap: 3.2rem;
+	}
+	.countdown {
+		/* padding: 1rem; */
+		width: 35rem;
+		height: 7rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		padding: 0;
+		font-size: 2rem;
+	}
+}
+/* below 1024px (tablets) */
+@media (max-width: 64em) {
+	.headings {
+		gap: 1rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+		padding: 3rem;
+		padding-top: 0;
+		padding-bottom: 0.5rem;
+		/* margin: -1rem; */
+	}
+	.countdown {
+		padding: 2rem;
+	}
+	.container-events {
+		grid-template-columns: 1fr 1fr;
+	}
+	.card {
+		width: 25rem;
+		height: 35rem;
+	}
+	.container-rsvp {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* below 944px (tablets) */
+@media (max-width: 59em) {
+	html {
+		font-size: 60%;
+	}
+	.headings {
+		grid-template-columns: 1fr;
+		padding: 0 8rem;
+		gap: 2rem;
+	}
+	.main-heading {
+		font-size: 6rem;
+	}
+	.countdown {
+		height: 7rem;
+		width: 35rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+	}
+
+	/* MOBILE NAV */
+	.btn-mobile-nav {
+		display: block;
+	}
+	.main-nav {
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.975);
+		color: red;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s ease-in;
+
+		/* hide the navigation //////////////////*/
+		/* display: none;    --> transition doesn't work with this
+		so we have to do something else which is opacity and 2 more things below
+		*/
+		/* 1 step--> hide element visually */
+		opacity: 0;
+
+		/* 2) Make it accessible to mouse n keyboard */
+		pointer-events: none;
+
+		/* 3)HIde it from screen readers */
+		visibility: hidden;
+	}
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+	.main-nav-link.nav-cta {
+		background-color: white !important;
+		border: 1px solid;
+	}
+	.nav-open .icon-mobile-nav[name='close-outline'] {
+		display: block;
+	}
+	.nav-open .icon-mobile-nav[name='menu-outline'] {
+		display: none;
+	}
+
+	.main-nav-list {
+		flex-direction: column;
+		gap: 4.8rem;
+	}
+	.main-nav-link {
+		color: rgba(169, 101, 114) !important;
+	}
+	.main-nav-link:link,
+	.main-nav-link:visited {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+	/* ////////// mobile nv ends here */
+
+	.description {
+		font-size: 2.5rem;
+	}
+	.step-img-box::before {
+		/* background-color: rgba(179, 90, 106, 0.612); */
+		background-color: maroon;
+		padding-bottom: 60%;
+		height: 15%;
+		width: 60%;
+		z-index: -1;
+	}
+	.step-img-box::after {
+		height: 15%;
+		width: 50%;
+		padding-bottom: 50%;
+		background-color: rgb(169, 101, 113);
+		z-index: -1;
+	}
+
+	.step-img {
+		width: 40%;
+		height: 50%;
+		border-radius: 2rem;
+	}
+	.fimg {
+		height: 65%;
+	}
+	#strong {
+		font-size: 4rem;
+	}
+	.bg-two {
+		font-size: 6rem;
+	}
+
+	.logo {
+		font-size: 3rem;
+	}
+}
+
+/* tablets 912px*/
+@media (max-width: 57em) {
+	.countdown {
+		font-size: 2rem;
+		height: 8rem;
+		width: 35rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+		/* padding: 3rem; */
+	}
+	.heading-two {
+		font-size: 3rem;
+	}
+	.main-heading {
+		font-size: 5rem;
+	}
+}
+/* 873px->54.56em */
+@media (max-width: 54.56em) {
+	.step-img {
+		height: fit-content;
+	}
+	.step-img-box::before {
+		/* background-color: rgba(179, 90, 106, 0.612); */
+		background-color: maroon;
+		/* padding-bottom: 60%; */
+		width: 60%;
+		height: 10%;
+		z-index: -1;
+	}
+	.step-img-box::after {
+		width: 50%;
+		height: 10%;
+		/* padding-bottom: 50%; */
+		background-color: rgb(169, 101, 113);
+		z-index: -1;
+	}
+}
+
+/* 822px->51.375em */
+@media (max-width: 51.375em) {
+	.heading-two {
+		/* margin-top: 2%; */
+	}
+	.faysal {
+		text-align: center;
+	}
+	.bride-groom {
+		/* padding-right: 0;
+		padding-left: 0;
+		padding-top: 4rem;
+		padding-bottom: 4rem; */
+	}
+	.bride-and-groom-container {
+		grid-template-columns: 1fr;
+		/* margin-top: 2rem; */
+	}
+
+	.step-img-box:nth-child(1) {
+		grid-row: 2;
+	}
+	.step-img-box:nth-child(3) {
+		/* padding-bottom: 2rem; */
+		grid-row: 4;
+	}
+	.step-img {
+		height: 16rem;
+		width: 16rem;
+	}
+	.step-text-box {
+		/* margin: 9rem; */
+		margin-top: 9rem;
+		margin-bottom: 9rem;
+		text-align: center;
+	}
+	.step-img-box::before {
+		/* background-color: rgba(179, 90, 106, 0.612); */
+		background-color: maroon;
+		/* padding-bottom: 60%; */
+		width: 40%;
+		height: 10%;
+		z-index: -1;
+	}
+	.step-img-box::after {
+		width: 30%;
+		height: 10%;
+		/* padding-bottom: 50%; */
+		background-color: rgb(169, 101, 113);
+		z-index: -1;
+	}
+}
+/* 820px -> 51.25em */
+@media (max-width: 51.25em) {
+	.html {
+		font-size: 55%;
+	}
+	.main-heading {
+		font-size: 6rem;
+	}
+	.countdown {
+		font-size: 2rem;
+		height: 7rem;
+		width: 35rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+	}
+}
+/* 790px->49.375em */
+@media (max-width: 49.375em) {
+	.container-rsvp {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+	}
+}
+
+/* 768px->48em */
+@media (max-width: 48em) {
+	.countdown {
+		height: 6rem;
+		padding: 1rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+		padding: 0;
+	}
+	#slider {
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+	.slide-img {
+		width: 60%;
+	}
+	.slider-wrapper {
+		align-content: center;
+	}
+}
+/* 720px->45em */
+@media (max-width: 45em) {
+	.step-img {
+		height: 20rem;
+	}
+	.step-img-box::before {
+		/* background-color: rgba(179, 90, 106, 0.612); */
+		background-color: maroon;
+		/* padding-bottom: 60%; */
+		width: 60%;
+		height: 5%;
+		z-index: -1;
+	}
+	.step-img-box::after {
+		width: 50%;
+		height: 5%;
+		/* padding-bottom: 50%; */
+		background-color: rgb(169, 101, 113);
+		z-index: -1;
+	}
+}
+/*710px->44.375  */
+@media (max-width: 44.375em) {
+	.step-img {
+		height: 18rem;
+	}
+}
+/* @674px->42.125em */
+@media (max-width: 42.125em) {
+	html {
+		font-size: 50%;
+	}
+	.bg-two {
+		font-size: 5rem;
+	}
+	.container-rsvp {
+		grid-template-columns: 1fr;
+	}
+	.bg {
+		background-image: url(./images/standingboth.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 70% 30%;
+
+		/* height: 100vh; */
+	}
+}
+/* 606px->37.875em */
+@media (max-width: 37.875em) {
+	.bg-two {
+		padding-bottom: 0;
+	}
+	.heading-two {
+		font-size: 4rem;
+	}
+	.bride-and-groom-container {
+		margin-top: 0;
+	}
+	.slide-img {
+		width: 60%;
+	}
+	.heading-gallery {
+		font-size: 5rem;
+	}
+}
+/* 590px->36.875 */
+@media (max-width: 37.875em) {
+	.header-background {
+		background-position: 25% 75%;
+	}
+	.bg-two {
+		font-size: 4.5rem;
+	}
+}
+/*577px->36.0625  */
+@media (max-width: 36.0625em) {
+	.step-img {
+		height: 15rem;
+	}
+}
+/*561px->35.0625  */
+@media (max-width: 35.0625em) {
+	.step-img {
+		height: 14rem;
+	}
+}
+
+/* 🇨Below 544px for mobile */
+@media (max-width: 34em) {
+	html {
+		font-size: 55%;
+	}
+	.grid {
+		grid-row-gap: 4.8rem;
+	}
+	.grid--2-cols {
+		grid-template-columns: 1fr;
+	}
+	.headings {
+		padding: 0 3.2rem;
+	}
+	.step-img {
+		height: 14rem;
+		width: 14rem;
+	}
+	.step-img-box {
+		transform: translateY(2.4rem);
+	}
+	.step-img-box:nth-child(1) {
+		grid-row: 2;
+	}
+	.step-img-box:nth-child(3) {
+		grid-row: 4;
+	}
+
+	.countdown {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		padding: 0.5rem;
+		color: white;
+		background-color: rgba(128, 0, 0, 0.633);
+		border-radius: 1rem;
+		font-size: 1rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 3rem;
+		padding: 1rem;
+	}
+	.heading-two {
+		font-size: 3rem;
+	}
+	.headings {
+		gap: 2rem;
+	}
+	.bg-two {
+		font-size: 4rem;
+	}
+	.description {
+		font-size: 2rem;
+	}
+}
+/* 514px->32.125em */
+@media (max-width: 32.125em) {
+	.step-img {
+		height: 12rem;
+		width: 12rem;
+	}
+	.slide-img {
+		width: 60%;
+	}
+	.heading-gallery {
+		font-size: 4rem;
+	}
+}
+/* 488px->30.5em */
+@media (max-width: 30.5em) {
+	.step-img {
+		height: 12rem;
+		width: 12rem;
+	}
+}
+
+/* Below 485px (iphone X) */
+@media (max-width: 30.56em) {
+	html {
+		font-size: 40%;
+	}
+	.bg-two {
+		font-size: 3rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+		/* padding: 1.5rem; */
+	}
+	.bg-two {
+		font-size: 5rem;
+	}
+	.step-img-box {
+		transform: translateY(3rem);
+		/* width: 45rem; */
+	}
+	.step-img {
+		height: 20rem;
+	}
+	.rotate-head {
+		margin-top: 9rem;
+	}
+}
+/* 475px */
+@media (max-width: 29.68em) {
+	.header-background {
+		background-position: 65% 45%;
+	}
+	.step-img {
+		height: 18rem;
+	}
+	.step-description {
+		font-size: 3rem;
+		line-height: 2.5rem;
+	}
+	.amal {
+		font-size: 3rem;
+	}
+	.faysal {
+		font-size: 3rem;
+	}
+}
+/* 469px->29.312em */
+@media (max-width: 29.312em) {
+	.step-img {
+		height: 18rem;
+	}
+	.slide-img {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.heading-gallery {
+		font-size: 5rem;
+	}
+}
+/* 454px->28.375 */
+@media (max-width: 28.375) {
+	html {
+		font-size: 40%;
+	}
+	.bg-two {
+		font-size: 1rem;
+	}
+	.step-img {
+		height: 10rem;
+	}
+}
+/* 421px */
+@media (max-width: 26.43em) {
+	html {
+		font-size: 40%;
+	}
+	.header-background {
+		background-position: 45% 55%;
+	}
+	.step-img {
+		height: 14rem;
+		width: 14rem;
+	}
+}
+
+/* 414px */
+@media (max-width: 25.875em) {
+	.header-background {
+		background-position: 15% 85%;
+		background-size: cover;
+	}
+	.main-heading {
+		font-size: 6rem;
+		font-weight: 900;
+		margin-top: 6rem;
+	}
+
+	.countdown {
+		height: 7rem;
+		width: 30rem;
+		padding: 0;
+		margin: 0;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+	}
+
+	.amal,
+	.faysal {
+		font-size: 3rem;
+	}
+	.bride-groom {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+/* 412->25.75em */
+@media (max-width: 25.75em) {
+	.header-background {
+		background-position: 15% 85%;
+	}
+}
+
+/* 390px */
+@media (max-width: 24.375em) {
+	.parallax2,
+	.parallaxdiay,
+	.parallax3,
+	.parallax-gallery,
+	.parallax4 {
+		display: none;
+	}
+	.head2 {
+		margin-top: 40rem;
+	}
+
+	.header-background {
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: 15% 85%;
+	}
+	.bg-two {
+		/* font-size: 5rem; */
+		/* margin-bottom: 0; */
+	}
+	.heading-two {
+		/* top: 60rem; */
+		/* margin-top: 55rem; */
+		font-size: 5rem;
+	}
+	.bng {
+		font-size: 4rem;
+	}
+	.countdown {
+		height: 7rem;
+		width: 30rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		font-size: 2rem;
+	}
+
+	.countdown-text {
+		font-size: 2rem;
+	}
+
+	.bride-groom {
+		padding: 2rem;
+		/* height: 100vh; */
+		margin-bottom: 5rem;
+		/* height: 100vh; */
+	}
+
+	.step-img {
+		height: 12rem;
+		width: 12rem;
+	}
+	.step-description {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	.slider {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		transform-style: preserve-3d;
+		animation: rotate 30s linear infinite;
+	}
+	.container-events {
+		grid-template-columns: 1fr;
+	}
+	.container-rsvp {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+	}
+	.container-rsvp:nth-child(2) {
+		grid-row: 1;
+	}
+}
+/* 370px->23.125em */
+@media (max-width: 23.125em) {
+	.heading-gallery {
+		font-size: 4rem;
+	}
+}
+
+/* 280px */
+@media (max-width: 17.5em) {
+	html {
+		font-size: 40%;
+	}
+	.main-heading {
+		font-size: 5rem;
+	}
+	.heading-two {
+		background-color: rgba(255, 255, 255, 0.729);
+	}
+	.countdown {
+		margin-top: 3rem;
+	}
+
+	.header-background {
+		background-position: 20% 80%;
+	}
+
+	.slider {
+		position: relative;
+		width: 120px;
+		height: 120px;
+		transform-style: preserve-3d;
+		animation: rotate 30s linear infinite;
+	}
+	.step-img {
+		height: 10rem;
+		width: 10rem;
+	}
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./queries.css" />
+		<script defer src="./script.js"></script>
+
+		<title>Wedding App</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+			integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			defer
+			src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+		></script>
+		<script
+			defer
+			src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+		></script>
+		<script defer src="./script.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+			integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="header-background">
+			<header class="header">
+				<a class="logo" href="#">Jo & Jim </a>
+
+				<nav class="main-nav">
+					<ul class="main-nav-list">
+						<li>
+							<a class="main-nav-link bandg" href="#brideandgroom"
+								>Bride&Groom</a
+							>
+						</li>
+						<li>
+							<a class="main-nav-link bandg" href="#events">Events</a>
+						</li>
+						<li>
+							<a class="main-nav-link bandg" href="#gallery">Gallery</a>
+						</li>
+						<li>
+							<a class="main-nav-link nav-cta" href="#rsvp">RSVP</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="btn-mobile-nav">
+					<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+					<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+				</button>
+			</header>
+
+			<div class="headings">
+				<h1 class="main-heading">Jo & Jim</h1>
+				<div class="head2">
+					<h2 class="heading-two">are getting married in ...</h2>
+
+					<div class="countdown">
+						<div class="container-days countdown-counter">
+							<h3 class="days">Time</h3>
+							<h3 class="countdown-text">Days</h3>
+						</div>
+
+						<div class="container-hours coundown-counter">
+							<h3 class="hours">Time</h3>
+							<h3 class="countdown-text">Hours</h3>
+						</div>
+
+						<div class="container-minutes coundown-counter">
+							<h3 class="minutes">Time</h3>
+							<h3 class="countdown-text">Minutes</h3>
+						</div>
+
+						<div class="container-seconds coundown-counter">
+							<h3 class="seconds">Time</h3>
+							<h3 class="countdown-text">Seconds</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="bride-groom" id="brideandgroom">
+			<div class="container">
+				<h2 class="bg-two">About Bride & Groom</h2>
+				<div class="bride-and-groom-container grid grid--2-cols grid--center-v">
+					<!-- step#1 -->
+					<div class="step-text-box">
+						<h2 class="heading-two">Meet our Bride</h2>
+						<p class="amal">
+							<span class="bng">Jo Mark </span> Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Corrupti totam repellendus quia
+							saepe et eum, expedita ducimus dolore magnam, quibusdam blanditiis
+							magni aspernatur unde laboriosam ex iste officia, nulla minus?
+							Praesentium accusamus tempore quaerat iste aliquam, facere,
+							expedita consequuntur repellat ad officia, amet autem mollitia
+							consectetur necessitatibus sit.
+						</p>
+					</div>
+					<div class="step-img-box">
+						<img src="./images/des.jpg" alt="Jo Image" class="step-img girl" />
+					</div>
+
+					<!-- step#2 -->
+
+					<div class="step-img-box">
+						<img src="./images/boy.jpg" alt="Jim image" class="step-img boy" />
+					</div>
+					<div class="step-text-box">
+						<h2 class="heading-two">Meet our Groom</h2>
+						<p class="faysal">
+							<span class="bng">Jim </span> Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Porro a, cupiditate temporibus
+							delectus pariatur dolor doloremque explicabo odit saepe
+							voluptatem, suscipit quae veniam deleniti velit in sapiente, at
+							error labore placeat. Unde delectus deleniti architecto voluptates
+							dolorem, culpa corporis ab similique eaque nisi tenetur
+							voluptatibus eligendi inventore explicabo natus provident.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- parallex2 -->
+		<div class="parallax2">
+			<h2 class="parallax-heading">Congrats!</h2>
+		</div>
+		<!-- /////////////////// rotating gallery starts -->
+		<div class="rotate">
+			<h1 class="rotate-head">Happy Moments</h1>
+			<div class="container-rotating">
+				<div class="slider">
+					<span style="--i: 6"
+						><img src="./images/8.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 1"
+						><img src="./images/7.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 2"
+						><img src="./images/6.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 3"
+						><img src="./images/5.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 7"
+						><img src="./images/4.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 4"
+						><img src="./images/3.jpg" alt="flower pic"
+					/></span>
+
+					<span style="--i: 5"
+						><img src="./images/2.jpg" alt="flower pic"
+					/></span>
+					<span style="--i: 8"
+						><img src="./images/1.jpg" alt="flower pic"
+					/></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- /////////////////////////////rotating gallery ends -->
+		<!--  parallax diay -->
+		<div class="parallaxdiay">
+			<h2 class="parallax-heading">Events!</h2>
+		</div>
+		<!--///////////////////// events section -->
+
+		<section class="events" id="events">
+			<div class="events-head">
+				<h3 class="planning-heading">events</h3>
+				<h2 class="heading-events">When & Where</h2>
+			</div>
+			<div class="container-events">
+				<div class="card">
+					<div class="haldi">
+						<header class="event-header">
+							<p class="event-name">Haldi</p>
+							<p class="event-date">June 2, 2022</p>
+							<p class="event-time">06:00pm - 10:00 pm</p>
+						</header>
+						<address>21 Beachview Avenue, Dreamland, NY, 12345</address>
+						<a href="tel:1231231234" class="tel">1234567890</a>
+					</div>
+					<img src="./images/haldi.png" alt="wedding-pic" class="card-img" />
+					<h2 class="map"></h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24261.603783443337!2d-74.40584276044925!3d40.526111100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c819f53e4b13%3A0xe8d95f78ad718132!2sPines%20Manor!5e0!3m2!1sen!2sus!4v1645682499840!5m2!1sen!2sus"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+
+				<div class="card">
+					<img src="./images/mehndi.jpg" alt="wedding-pic" class="card-img" />
+					<div class="mehndi">
+						<header class="event-header">
+							<p class="event-name">Mehndi</p>
+							<p class="event-date">June 3, 2022</p>
+							<p class="event-time">06:00pm - 10:00 pm</p>
+						</header>
+						<address>21 Beachview Avenue, Dreamland, NY, 12345</address>
+						<a href="tel:123-456-7890" class="tel">123-456-7890</a>
+					</div>
+
+					<h2 class="map"></h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24261.603783443337!2d-74.40584276044925!3d40.526111100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c819f53e4b13%3A0xe8d95f78ad718132!2sPines%20Manor!5e0!3m2!1sen!2sus!4v1645682499840!5m2!1sen!2sus"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+
+				<div class="card">
+					<div class="wedding">
+						<header class="event-header">
+							<p class="event-name">Wedding</p>
+							<p class="event-date">June 5, 2022</p>
+							<p class="event-time">06:00pm - 10:00 pm</p>
+						</header>
+
+						<address>21 Beachview Avenue, Dreamland, NY, 12345</address>
+						<a href="tel:123-456-7890" class="tel">123-456-7890</a>
+					</div>
+					<img src="./images/wedding.jpg" alt="wedding-pic" class="card-img" />
+					<h2 class="map"></h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24261.603783443337!2d-74.40584276044925!3d40.526111100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c819f53e4b13%3A0xe8d95f78ad718132!2sPines%20Manor!5e0!3m2!1sen!2sus!4v1645682499840!5m2!1sen!2sus"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+
+				<div class="card">
+					<img
+						src="./images/reception.jpg"
+						alt="wedding-pic"
+						class="card-img"
+					/>
+					<div class="reception">
+						<header class="event-header">
+							<p class="event-name">Reception</p>
+							<p class="event-date">June 7, 2022</p>
+							<p class="event-time">06:00pm - 10:00 pm</p>
+						</header>
+						<address>21 Beachview Avenue, Dreamland, NY, 12345</address>
+						<a href="tel:123-456-7890" class="tel">123-456-7890</a>
+					</div>
+					<!-- <h2 class="map"></h2> -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24261.603783443337!2d-74.40584276044925!3d40.526111100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c819f53e4b13%3A0xe8d95f78ad718132!2sPines%20Manor!5e0!3m2!1sen!2sus!4v1645682499840!5m2!1sen!2sus"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- ///////////////////////////////////Events Section ends here/////// -->
+
+		<!-- parallex3 -->
+		<div class="parallax3">
+			<h2 class="parallax-heading">Bride's Family</h2>
+		</div>
+		<!-- /////////////////// -->
+
+		<!-- Meet the family///////////////// Starts here -->
+
+		<section class="gallery" id="gallery">
+			<div>
+				<h2 class="heading-gallery">Meet Bride and Groom's Family</h2>
+			</div>
+			<section id="slider">
+				<div class="container-gallery">
+					<div class="subcontainer">
+						<div class="slider-wrapper">
+							<br />
+							<div class="my-slider">
+								<!-- fotb -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-bhai">
+											<h2>Bhai</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Father Of The Bride</h3>
+										</div>
+									</div>
+								</div>
+								<!-- motb//////// -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-zakia">
+											<h2>Sue</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Mother Of The Bride</h3>
+										</div>
+									</div>
+								</div>
+								<!-- sister of the bride -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-sheema">
+											<h2>Samy</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Sister Of The Bride</h3>
+										</div>
+									</div>
+								</div>
+								<!-- botb////////////// -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-fahad">
+											<h2>Tom</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Brother Of The Bride</h3>
+										</div>
+									</div>
+								</div>
+								<!-- fotg -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-bhaig">
+											<h2>William</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Father Of The Groom</h3>
+										</div>
+									</div>
+								</div>
+								<!-- motg/////////////// -->
+								<div>
+									<div class="slide">
+										<div class="slide-img img-bhaabi">
+											<h2>Sim</h2>
+										</div>
+										<br />
+										<div>
+											<h3>Mother Of The Groom</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- parallex-gallery -->
+		<div class="parallax-gallery">
+			<h2 class="parallax-heading">RSVP</h2>
+		</div>
+		<!-- /////////////////// -->
+
+		<!-- RSVP Section Starts here//////////////////////// -->
+
+		<section class="rsvp" id="rsvp">
+			<div class="container-rsvp">
+				<div class="rsvp-heading">
+					<h3 class="rsvp--planning-heading">Invitation</h3>
+					<h2 class="heading-rsvp">Will you attend?</h2>
+
+					<div class="form-container">
+						<form
+							onsubmit="sendEmail(); reset(); return false"
+							class="contact-form"
+						>
+							<div class="form-control">
+								<input type="text" id="name" required />
+								<label for="name">Name</label>
+							</div>
+							<div class="form-control">
+								<input type="text" id="email" required />
+								<label for="email">Your email</label>
+							</div>
+
+							<div class="datalist">
+								<input type="number" list="Guests" name="Guests" id="guests" />
+								<label for="Guests" class="label">Guests attending</label>
+								<datalist id="Guests">
+									<option value="0"></option>
+									<option value="1"></option>
+									<option value="2"></option>
+									<option value="3"></option>
+									<option value="4"></option>
+									<option value="5"></option>
+									<option value="6"></option>
+									<option value="7"></option>
+									<option value="8"></option>
+									<option value="9"></option>
+									<option value="10"></option>
+								</datalist>
+							</div>
+
+							<textarea
+								id="message"
+								rows="3"
+								placeholder="Let us know if you are joining us !"
+							></textarea>
+
+							<!-- <button class="btn">Submit</button> -->
+							<input type="submit" class="btn" value="Submit" />
+						</form>
+					</div>
+				</div>
+				<div class="bg"></div>
+			</div>
+		</section>
+		<!-- parallex4 -->
+		<div class="parallax4">
+			<h2 class="parallax-heading">Hoping to See you there!</h2>
+		</div>
+		<!-- /////////////////// -->
+
+		<!-- Footer starts here////////////////// -->
+
+		<footer class="footer">
+			<div class="container-footer grid grid-footer">
+				<div class="logo-col">
+					<ul class="social-links">
+						<li>
+							<a class="footer-link" href=""
+								><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+							></a>
+						</li>
+						<li>
+							<a class="footer-link" href=""></a
+							><ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+						</li>
+						<li>
+							<a class="footer-link" href=""
+								><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+							></a>
+						</li>
+					</ul>
+				</div>
+
+				<nav class="nav-col">
+					<p class="footer-heading">LINKS</p>
+					<ul class="footer-nav">
+						<li class=""><a class="footer-link" href="#">Home</a></li>
+						<li class="">
+							<a class="footer-link" href="#brideandgroom">Bride&Groom</a>
+						</li>
+						<li class=""><a class="footer-link" href="#events">Events</a></li>
+						<li class=""><a class="footer-link" href="#gallery">Gallery</a></li>
+						<li class=""><a class="footer-link" href="#rsvp">RSVP</a></li>
+					</ul>
+				</nav>
+
+				<div class="address-col">
+					<p class="footer-heading">Have A Question?</p>
+					<address class="contacts">
+						<p>
+							<a class="footer-link" href="tel:847-890-1725">847-890-1725</a>
+							<br />
+							<a class="footer-link" href="mailto:syedahalam@gmail.com"
+								>syedahalam@gmail.com</a
+							>
+						</p>
+					</address>
+				</div>
+			</div>
+			<p class="copyright">Copyright &copy; 2022 | All right are reserved</p>
+		</footer>
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+	</body>
+</html>
