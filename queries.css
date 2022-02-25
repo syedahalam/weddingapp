@@ -88,6 +88,7 @@
 	}
 	.container-events {
 		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
 	}
 	.card {
 		width: 25rem;
@@ -222,6 +223,10 @@
 	.logo {
 		font-size: 3rem;
 	}
+	.container-events {
+		/* grid-template-columns: 1fr 1fr; */
+		margin: 0 auto;
+	}
 }
 
 /* tablets 912px*/
@@ -264,6 +269,10 @@
 		/* padding-bottom: 50%; */
 		background-color: rgb(169, 101, 113);
 		z-index: -1;
+	}
+	.container-events {
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
 	}
 }
 
@@ -317,6 +326,10 @@
 		/* padding-bottom: 50%; */
 		background-color: rgb(169, 101, 113);
 		z-index: -1;
+	}
+	.container-events {
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
 	}
 }
 /* 820px -> 51.25em */
@@ -418,6 +431,16 @@
 		background-position: 70% 30%;
 
 		/* height: 100vh; */
+	}
+	.container-events {
+		/* grid-template-columns: 1fr 1fr; */
+		margin: 0 auto;
+	}
+}
+/* 667px->41.68em */
+@media (max-width: 41.687em) {
+	.container-events {
+		grid-template-columns: 1fr;
 	}
 }
 /* 606px->37.875em */
@@ -748,9 +771,7 @@
 		transform-style: preserve-3d;
 		animation: rotate 30s linear infinite;
 	}
-	.container-events {
-		grid-template-columns: 1fr;
-	}
+
 	.container-rsvp {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
