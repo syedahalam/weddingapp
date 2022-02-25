@@ -7,6 +7,19 @@ btnNavEl.addEventListener('click', function () {
 	headerEl.classList.toggle('nav-open');
 });
 
+///////////////////// sticky nav ////////////////
+const header = document.querySelector('.header');
+window.addEventListener('scroll', fixNav);
+
+function fixNav() {
+	// console.log(window.scrollY, header.offsetHeight);
+
+	if (window.scrollY > header.offsetHeight + 250) {
+		header.classList.add('active');
+	} else {
+		header.classList.remove('active');
+	}
+}
 ////////////////////smooth scrolling animation/////////////
 const allLinks = document.querySelectorAll('a:link');
 console.log(allLinks);

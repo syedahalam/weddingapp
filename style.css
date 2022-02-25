@@ -14,21 +14,30 @@ body {
 	font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
 }
+/* .cont {
+	max-width: 1344px;
+	margin: 0 auto;
+} */
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	/* background-color: rgba(169, 101, 114, 0.845); */
-	background-color: maroon;
+	/* background-color: rgba(128, 0, 0, 0.654); */
 
 	/* coz we wanted to make it sticky thats why height is given */
 	height: 5rem;
 	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 0 48px;
+	transition: all 0.3s ease-in;
 	/* position: relative; */
 	position: fixed;
-	color: white;
+	/* color: white; */
+	color: maroon;
 	font-family: 'Dancing Script', sans-serif;
 	z-index: 10;
 }
@@ -42,6 +51,17 @@ body {
 	height: 100vh;
 
 	position: relative;
+}
+/* overlay dark color over bg image */
+.header-background::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -10;
 }
 .bng {
 	font-size: 3rem;
@@ -61,32 +81,56 @@ body {
 	height: 2rem;
 	width: 2rem;
 }
+
+.header a.current,
+.header a:hover {
+	/* color: #000; */
+	text-decoration: dotted;
+	font-weight: bold;
+}
 .header .logo {
 	padding-top: 1rem;
 	height: 5rem;
 	font-size: 3rem;
 	font-weight: 700;
 	text-decoration: none;
+	/* color: white; */
+	color: maroon;
+}
+.header.active .logo {
 	color: white;
 }
-.main-nav ul li {
+
+.header.active {
+	background-color: rgba(128, 0, 0);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 	color: #fff !important;
+}
+.main-nav ul li {
+	/* color: #fff; */
+	/* color: maroon; */
 }
 .main-nav-list {
 	list-style: none;
 	display: flex;
 	align-items: center;
 	gap: 4.2rem;
-	color: #fff;
+	/* color: #fff; */
+	/* color: maroon; */
 }
 .main-nav-link.bandg {
-	color: #fff;
+	/* color: #fff; */
+	color: maroon;
+}
+.header.active .main-nav-link.bandg {
+	color: white;
 }
 
 .main-nav-link:link,
 .main.nav-link:visited {
 	text-decoration: none;
-	color: #fff;
+	/* color: #fff; */
+	color: visited;
 	font-weight: 500;
 	font-size: 2rem;
 	/* transition: all 0.3s;
