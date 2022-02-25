@@ -786,6 +786,9 @@
 	.heading-gallery {
 		font-size: 4rem;
 	}
+	.container-events {
+		margin: 0;
+	}
 }
 
 /* 280px */
