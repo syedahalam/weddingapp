@@ -1,3 +1,20 @@
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 85.375em) {
+	.parallax2,
+	.parallaxdiay,
+	.parallax3,
+	.parallax-gallery,
+	.parallax4,
+	.parallaxgroomsfam {
+		background-attachment: scroll;
+	}
+	.parallax4,
+	.parallaxgroomsfam {
+		margin-top: 2rem;
+	}
+}
+/* ////////////////// */
+
 /* 1344 px and less */
 @media (max-width: 84em) {
 	.header-background {
@@ -129,7 +146,8 @@
 	}
 	.main-nav {
 		position: absolute;
-		background-color: rgba(255, 255, 255, 0.975);
+		/* background-color: rgba(255, 255, 255, 0.975); */
+		background-color: transparent;
 		color: red;
 		top: 0;
 		left: 0;
@@ -184,6 +202,7 @@
 		font-size: 3rem;
 		font-weight: 700;
 	}
+	.nav
 	/* ////////// mobile nv ends here */
 
 	.description {
@@ -424,14 +443,14 @@
 	.container-rsvp {
 		grid-template-columns: 1fr;
 	}
-	.bg {
+	/* .bg {
 		background-image: url(./images/hope.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 70% 30%;
 
-		/* height: 100vh; */
-	}
+		height: 100vh;
+	} */
 	.container-events {
 		/* grid-template-columns: 1fr 1fr; */
 		margin: 0 auto;
@@ -692,13 +711,13 @@
 
 /* 390px */
 @media (max-width: 24.375em) {
-	.parallax2,
+	/* .parallax2,
 	.parallaxdiay,
 	.parallax3,
 	.parallax-gallery,
 	.parallax4 {
 		display: none;
-	}
+	} */
 	.last {
 		background: url(./images/hope.jpg);
 		/* min-height: 40%; */

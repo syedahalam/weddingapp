@@ -164,10 +164,13 @@ body {
 /* General components */
 .btn-mobile-nav {
 	border: none;
-	background: rgba(255, 255, 255, 0.469);
+	background: transparent;
 	cursor: pointer;
 	/* by default display non until reach to particular rems*/
 	display: none;
+}
+.header.active .icon-mobile-nav {
+	color: white;
 }
 .icon-mobile-nav {
 	height: 4.8rem;
