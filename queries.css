@@ -682,19 +682,19 @@
 	.container-events {
 		justify-content: center;
 	}
-	.last {
+	/* .last {
 		background: url(./images/hope.jpg);
-		/* min-height: 40%; */
+		
 
 		background-repeat: no-repeat;
 		background-size: cover;
-		/* background-position: 80% 30%; */
+		
 		background-attachment: fixed;
 		width: 100%;
 		height: 100vh;
 		background-position: 60% 40%;
 		position: relative;
-	}
+	} */
 	.head2 {
 		margin-top: 40rem;
 	}
