@@ -237,10 +237,10 @@
 	.logo {
 		font-size: 3rem;
 	}
-	.container-events {
-		/* grid-template-columns: 1fr 1fr; */
+	/* .container-events {
+		grid-template-columns: 1fr 1fr;
 		margin: 0 auto;
-	}
+	} */
 }
 
 /* tablets 912px*/
