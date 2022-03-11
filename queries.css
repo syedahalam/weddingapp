@@ -718,6 +718,10 @@
 	.parallax4 {
 		display: none;
 	} */
+	.card {
+		width: 25rem;
+		height: 35rem;
+	}
 	.last {
 		background: url(./images/hope.jpg);
 		/* min-height: 40%; */
@@ -741,13 +745,8 @@
 		background-size: cover;
 		background-position: 15% 85%;
 	}
-	.bg-two {
-		/* font-size: 5rem; */
-		/* margin-bottom: 0; */
-	}
+
 	.heading-two {
-		/* top: 60rem; */
-		/* margin-top: 55rem; */
 		font-size: 5rem;
 	}
 	.bng {
@@ -770,9 +769,8 @@
 
 	.bride-groom {
 		padding: 2rem;
-		/* height: 100vh; */
+
 		margin-bottom: 5rem;
-		/* height: 100vh; */
 	}
 
 	.step-img {
@@ -782,6 +780,9 @@
 	.step-description {
 		font-size: 2rem;
 		line-height: 2.5rem;
+	}
+	.btn {
+		height: 5rem;
 	}
 	.slider {
 		position: relative;
