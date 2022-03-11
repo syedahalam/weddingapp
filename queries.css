@@ -104,7 +104,10 @@
 	}
 	.card {
 		width: 25rem;
-		height: 35rem;
+		height: 37rem;
+	}
+	.card-img {
+		height: 33%;
 	}
 	.container-rsvp {
 		grid-template-columns: 1fr 1fr;
@@ -284,6 +287,10 @@
 		background-color: rgb(169, 101, 113);
 		z-index: -1;
 	}
+	/* .card {
+		width: 25rem;
+		height: 40rem;
+	} */
 }
 
 /* 822px->51.375em */
